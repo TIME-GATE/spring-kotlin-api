@@ -18,12 +18,12 @@ class HelloWorldController {
     @Autowired
     val helloWorldService = HelloWorldService()
 
-    @RequestMapping("/v1/api/getPersonas", method = arrayOf(RequestMethod.GET))
+    @RequestMapping("/v1/api/getHelloWorld", method = arrayOf(RequestMethod.GET))
     fun getHelloWorld(@RequestParam request: Map<String, String>): String { 
         return helloWorldService.getHelloWorld(request)
     }
 
-    @RequestMapping("/v1/api/getPersonas", method = arrayOf(RequestMethod.POST))
+    @RequestMapping("/v1/api/postHelloWorld", method = arrayOf(RequestMethod.POST))
     fun postHelloWorld(@RequestParam request: Map<String, String>): String { 
         return helloWorldService.getHelloWorld(request)
     }
