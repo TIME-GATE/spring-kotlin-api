@@ -5,6 +5,8 @@ import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.*
 import java.io.IOException
 
+import joseph.service.HelloWorldService
+
 /**
  * Api
  *
@@ -12,8 +14,18 @@ import java.io.IOException
  */
 @RestController
 class HelloWorldController {
-	
+
+    @Autowired
+    val helloWorldService = HelloWorldService()
+
     @RequestMapping("/v1/api/getPersonas", method = arrayOf(RequestMethod.GET))
-    open fun getPersonas(): String { return "Hello World" }
+    fun getHelloWorld(@RequestParam request: Map<String, String>): String { 
+        return helloWorldService.getHelloWorld(request)
+    }
+
+    @RequestMapping("/v1/api/getPersonas", method = arrayOf(RequestMethod.POST))
+    fun postHelloWorld(@RequestParam request: Map<String, String>): String { 
+        return helloWorldService.getHelloWorld(request)
+    }
 
 }
