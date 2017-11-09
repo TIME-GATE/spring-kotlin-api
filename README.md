@@ -1,6 +1,6 @@
 ### kotlin服务器初体验
 
-  kotlin突然火了起来，大致看下语言特性并体验了下，于是写了这个服务器API DEMO，并与Java/Scala做一些对比
+  kotlin突然火了起来，大致看下了语言特性并写了这个API DEMO，最后与Java/Scala做一些对比
 
 ### 运行测试
 ```text
