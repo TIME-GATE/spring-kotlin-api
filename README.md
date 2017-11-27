@@ -26,5 +26,5 @@ curl 127.0.0.1:8080/v1/api/getHelloWorld
 
 ### 参考
 
-* http://www.kotlindoc.cn/GettingStarted/Idioms.html
-* http://projects.spring.io/spring-boot/
+* [Kotlin中文文档](http://www.kotlindoc.cn/GettingStarted/Idioms.html)
+* [Spring文档](http://projects.spring.io/spring-boot/)
