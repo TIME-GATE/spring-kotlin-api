@@ -17,8 +17,13 @@ object RedisPool {
     val PORT: Int = 6379
     val TIMEOUT: Int = 10000
 
+//    config.maxTotal = 100
+//    config.maxIdle = 5
+//    config.maxWaitMills = 1000
+//    config.testOnBorrow = true
 
     var jedisPool = JedisPool(config, HOST, PORT, TIMEOUT)
+
     var jedis = jedisPool.getResource()
 
 
