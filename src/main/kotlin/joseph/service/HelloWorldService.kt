@@ -1,9 +1,6 @@
-package joseph.service;
-
-import java.util.List;
+package joseph.service
 
 import org.springframework.stereotype.Service;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * 逻辑实现
@@ -13,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Service
 class HelloWorldService {
 
-    fun getHelloWorld(request: Map<String, String>): String{
+    fun getHelloWorld(request: Map<String, String>): String {
         return request.getOrDefault("hi", "请传入参数")
     }
 }

@@ -34,7 +34,6 @@ dependencies {
   compile 'org.springframework.boot:spring-boot-starter-aop'
   compile 'org.springframework.boot:spring-boot-starter-web'
   compile "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
-
   compile 'com.github.httl:httl:1.0.11'
   compile 'com.github.httl:httl-springmvc:1.0.11'
   compile 'org.avaje.ebeanorm:avaje-ebeanorm:7.9.1'
