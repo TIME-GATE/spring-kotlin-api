@@ -40,6 +40,7 @@ dependencies {
   compile 'org.avaje.ebeanorm:avaje-ebeanorm-agent:4.9.2'
   compile 'org.avaje:avaje-agentloader:2.1.2'
   compile 'org.jasypt:jasypt:1.9.2'
+  compile 'redis.clients:jedis:2.9.0'
   
   testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
